@@ -1,0 +1,14 @@
+{
+  "name": "federation-example",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "wsrun --parallel -p @mftest/host -p @mftest/remote -c start",
+    "build": "yarn workspace @mftest/host build & yarn workspace @mftest/remote build"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  }
+}

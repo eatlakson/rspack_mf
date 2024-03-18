@@ -1,0 +1,25 @@
+{
+  "name": "@mftest/host",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve dist -p 80",
+    "build-rs-dev": "rspack build --mode development",
+    "build-ctx": "rspack build --mode development -c ./rspack.user-ctx.config.js",
+    "build": "yarn build-ctx & yarn build-rs-dev"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "^0.0.16",
+    "lodash": "^4.17.21",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "serve": "^14.2.0",
+    "typescript": "^5.0.4",
+    "@rspack/core": "^0.5.0",
+    "@rspack/cli": "^0.5.0"
+  }
+}

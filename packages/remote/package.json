@@ -1,0 +1,20 @@
+{
+  "name": "@mftest/remote",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve dist -p 3002",
+    "build": "rspack build --mode development"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "^0.0.16",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0",
+    "@rspack/core": "^0.5.0",
+    "@rspack/cli": "^0.5.0",
+    "@rspack/dev-server": "^0.5.0"
+  }
+}
