@@ -9,8 +9,8 @@ export function SayHello(props) {
 
   return (
     <div style={{ backgroundImage: "linear-gradient(to right, red , yellow)" }}>
-      <h1>Hello from the Remote! {props.name}</h1>
-      <div>ctx: {user.name}</div>
+      <h1>Remote {props.name}</h1>
+      <h4>ctx: {user.name}</h4>
       <button onClick={() => setCount((n) => n + 1)}>increment</button>
       <br />
       <div>count: {count} </div>

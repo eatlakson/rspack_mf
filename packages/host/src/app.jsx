@@ -8,11 +8,9 @@ export default function HostApp() {
   const { user } = useUserContext();
   return (
     <>
-      <h1>{"HOST"}</h1>
-      <div>ctx: {user.name}</div>
-      <div style={{ border: "1px solid blue" }}>
-        <SayHello />
-      </div>
+      <h1>HOST</h1>
+      <h4>ctx: {user.name}</h4>
+      <SayHello />
     </>
   );
 }
