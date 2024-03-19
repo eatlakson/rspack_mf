@@ -22,7 +22,11 @@ module.exports = {
     minimize: false,
   },
   output: {
-    uniqueName: "sidecarUserContext",
+    /**
+     * Define uniqueName to avoid conflict with host's
+     * runtime chunkLoadingGlobal
+     */
+    uniqueName: "userContext",
     path: outDir,
     publicPath: ASSET_PATH,
     filename: "[name]-[contenthash].js",

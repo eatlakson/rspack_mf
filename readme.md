@@ -3,7 +3,7 @@
 The current setup is:
 
 The host is defined as the `host`, it consumes two remotes: `remote` and `mf-user-context`.
-`mf-user-context` is hosted by the hosts web server, but built by a separate repack.config.js file so as to have a completely isolated rspack runtime from the host. (Ideally, the host would expose the user-context as a container (via the rspack ContainerPlugin), however, MF v1.5 only allows one container per rspack runtime)
+`mf-user-context` is hosted by the host's web server, but built by a separate repack.config.js file so as to have a completely isolated rspack runtime from the host. (Ideally, the host would expose the user-context as a container (via the rspack ContainerPlugin), however, MF v1.5 only allows one container per rspack runtime)
 
 1. install the dependencies: `yarn`
 2. build the packages: `yarn build`
