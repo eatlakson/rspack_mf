@@ -53,7 +53,7 @@ module.exports = {
         // NOTE: when this line is commented out, the user-context is not a remote, and just an imported
         // package, but for some reason this causes react sharing to break - sometimes it loads react once
         // sometimes twice. When it is loaded twice it breaks hooks and the app fails to load.
-        // When this is uncommented, react sharing seems to consistently work as expected.
+        // When this is uncommented, react sharing *seems* to consistently work as expected.
         // "@mf/user-context": "sidecarUserContext@http://localhost/remoteEntry-sidecarUserContext.js",
       },
       exposes: {
