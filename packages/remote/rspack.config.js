@@ -54,7 +54,7 @@ module.exports = {
         // package, but for some reason this causes react sharing to break - sometimes it loads react once
         // sometimes twice. When it is loaded twice it breaks hooks and the app fails to load.
         // When this is uncommented, react sharing *seems* to consistently work as expected.
-        // "@mf/user-context": "sidecarUserContext@http://localhost/remoteEntry-sidecarUserContext.js",
+        // "@mf/user-context": "userContext@http://localhost/remoteEntry-userContext.js",
       },
       exposes: {
         ".": "./src/app",

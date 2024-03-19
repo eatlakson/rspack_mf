@@ -1,7 +1,7 @@
 const path = require("node:path");
 const { HtmlRspackPlugin } = require("@rspack/core");
 const {
-  container: { ModuleFederationPlugin, ModuleFederationPluginV1 },
+  container: { ModuleFederationPlugin },
 } = require("@rspack/core");
 
 const workingDir = process.cwd();
@@ -55,7 +55,7 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        "@mf/user-context": "sidecarUserContext@http://localhost/remoteEntry-sidecarUserContext.js",
+        "@mf/user-context": "userContext@http://localhost/remoteEntry-userContext.js",
         "@mf/remote": "mf_remote@http://localhost:3002/remoteEntry.js",
       },
       shared: {

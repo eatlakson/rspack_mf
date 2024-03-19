@@ -52,8 +52,8 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "sidecarUserContext",
-      filename: "remoteEntry-sidecarUserContext.js",
+      name: "userContext",
+      filename: "remoteEntry-userContext.js",
       remotes: {},
       exposes: {
         ".": require.resolve("@mf/user-context"),
